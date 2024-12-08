@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Current Deflection / Elevation -->
+    <TextView
+        android:id="@+id/deflectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deflection: ---"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/elevationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elevation: ---"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Previous Deflection/Elevation -->
+    <TextView
+        android:id="@+id/previousDeflectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Deflection: "
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/previousElevationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Elevation: "
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Deflection Mode label and group -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deflection Mode:"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/deflectionModeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"/>
+
+        <RadioButton
+            android:id="@+id/radioLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer: 0.000 s"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/toggleTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Timer"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Timer"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Data"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/resetMortarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Mortar"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
